@@ -1,96 +1,51 @@
 # Connectly – Social Media Platform
 
-Connectly is a mini social media application built using HTML, CSS, JavaScript, Node.js, Express.js, and SQLite. Users can create accounts, share posts, connect with other users, and explore content.
+Connectly is a social media web application built using HTML, CSS, JavaScript, Node.js, Express.js, and SQLite. It allows users to create accounts, share posts, interact with other users, and discover content.
 
-**Live Demo:** [Connectly – Social Media Platform](https://social-media-plateform-1.onrender.com)
+**Live Demo:** [Connectly](https://social-media-plateform-1.onrender.com)
 
 ## Features
 
-- User registration and login with password hashing and JWT authentication
-- User profiles with bio and profile picture
+- User registration and login using JWT authentication and bcrypt password hashing
+- User profiles with usernames, bio, and profile pictures
 - Create, edit, and delete posts
-- Share photos and videos using media URLs
 - Like posts and add comments
-- Follow and unfollow other users
+- Follow and unfollow users
 - Search users by name or username
-- Search posts and explore content
-- Responsive design for desktop and mobile
-- SQLite database for storing users, posts, comments, likes, and follows
-- Basic security using input validation, Helmet, and rate limiting
+- Search posts and explore the feed
+- Responsive layout for desktop and mobile devices
+- SQLite database for users, posts, comments, likes, and follows
+- Input validation, security headers, and login rate limiting
 
 ## Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Node.js, Express.js
-- **Database:** SQLite
-- **Authentication:** JWT and bcrypt
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- Express.js
+- SQLite
+- JWT
+- bcrypt
 
-## Requirements
+## Live Demo
 
-- Node.js 22.x
-- npm
-- VS Code (optional)
+Try the application here:
 
-## Getting Started
+[https://social-media-plateform-1.onrender.com](https://social-media-plateform-1.onrender.com)
 
-### 1. Clone the repository
+## What I Learned
 
-```bash
-git clone https://github.com/abhaysaxena-git/social-media-plateform.git
-```
-
-### 2. Open the project folder
-
-```bash
-cd social-media-plateform
-```
-
-### 3. Install dependencies
-
-```bash
-npm install
-```
-
-### 4. Set environment variables
-
-Create a `.env` file in the project root and add:
-
-```env
-JWT_SECRET=your_long_random_secret
-```
-
-Replace the example value with a strong, random secret.
-
-### 5. Start the application
-
-```bash
-npm start
-```
-
-Open `http://localhost:3000` in your browser.
-
-The SQLite database is created automatically when the application starts.
-
-## Deployment
-
-The application is deployed on Render.
-
-- **Build Command:** `npm install`
-- **Start Command:** `npm start`
-- **Environment Variable:** `JWT_SECRET`
-
-**Live Website:** https://social-media-plateform-1.onrender.com
-
-## Project Notes
-
-- The application uses SQLite to store user and post data.
-- Media can be shared through URLs. File upload support depends on the implemented version of the application.
-- The Explore feed displays existing posts in a different order.
-- The database may not persist across restarts on hosts with temporary filesystems. Persistent storage or a managed database is recommended for long-term use.
+- Building REST APIs with Node.js and Express
+- Implementing user authentication with JWT
+- Working with SQLite for storing application data
+- Managing posts, comments, likes, and follow relationships
+- Connecting frontend functionality with backend APIs
+- Deploying a web application using Render
 
 ## Future Improvements
 
-- Add reliable image and video uploads
-- Improve database storage for deployment
-- Add password reset and email verification
-- Add notifications and more profile options
+- Add more profile customization options
+- Improve media upload and storage
+- Add notifications and password recovery
+- Move to a managed database for more reliable production storage
